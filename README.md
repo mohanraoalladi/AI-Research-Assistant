@@ -34,11 +34,11 @@ Capstone/
 flowchart TD
     A[User uploads files] --> B[Document Loader]
     B --> C[Text Splitter & Embeddings]
-    C --> D[FAISS Vector Store (persistent)]
+    C --> D["FAISS Vector Store (persistent)"]
     E[User question] --> F[Chat Interface]
     F --> G[ConversationalRetrievalChain]
     G --> D
-    G --> H[LLM (LLaMA/OpenAI/Gemini)]
+    G --> H["LLM (LLaMA/OpenAI/Gemini)"]
     G --> I[Memory module]
     H --> F
     I --> F
